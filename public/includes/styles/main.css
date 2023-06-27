@@ -1,0 +1,122 @@
+img{
+    width: 200px;
+}
+
+.kartenset{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+
+.karte{
+    display: flex;
+    flex-wrap: wrap;
+    width: 220px;
+    height: 350px;
+    background-color: lightgreen;
+    margin: 20px;
+    border-radius: 3rem;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+body{
+    background-color: lightskyblue;
+}
+
+.planze{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(60, 151, 60);
+    border-radius: 10px;
+    color: white;
+    
+}
+
+.gift{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(98, 6, 116);
+    border-radius: 10px;
+    color: white;
+}
+
+.feuer{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(243, 51, 51);
+    border-radius: 10px;
+    color: white;
+}
+
+.flug{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgba(146, 238, 248, 0.984);
+    border-radius: 10px;
+}
+
+.wasser{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(17, 28, 233);
+    border-radius: 10px;
+    color: white;
+}
+
+.keafer{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(0, 161, 27);
+    border-radius: 10px;
+    color: white;
+}
+
+
+.normal{
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 23px;
+    text-align: center;
+    background-color: rgb(145, 147, 151);
+    border-radius: 10px;
+}
+
+p{
+    font-family:Arial, Helvetica, sans-serif;
+}
