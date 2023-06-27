@@ -1,0 +1,38 @@
+extends ../templates/layout.pug
+
+block logo 
+    img.logodetail(src="../includes/bilder/logo.png", alt="Pokemon Logo")
+
+
+block body
+    div.detail
+        h1= pokemon.Name
+        h2= "PokeDexNr.: " +pokemon.Nummer
+        img.detailimg(src= "/includes/bilder/" + pokemon.Name + ".png", alt=pokemon.Name)
+        p= pokemon.Beschreibung
+        p= "Größe: " + pokemon.Größe
+        - var typen = pokemon.Typ.split('/')
+                each typ in typen
+                    if typ === 'Pflanze'
+                        div.planze 
+                            p Pflanze
+                    else if typ === 'Gift'
+                        div.gift 
+                            p Gift
+                    else if typ === 'Feuer'
+                        div.feuer 
+                            p Feuer
+                    else if typ === 'Flug'
+                        div.flug 
+                            p Flug
+                    else if typ === 'Wasser'
+                        div.wasser 
+                            p Wasser
+                    else if typ === 'Käfer'
+                        div.keafer 
+                            p Käfer
+                    else if typ === 'Normal'
+                        div.normal 
+                            p Normal
+                    else
+                        p= typ

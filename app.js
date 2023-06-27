@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const pokemon = require('./pokemon.json')
+const pokemons = require('./pokemon.json')
 const fs = require('fs')
 
 const port = 3000;
@@ -30,6 +30,18 @@ app.get('/', async (req, res, next) => {
   }
 });
 
+// Pfad für die jeweilige Karten URL die auf der Rootseite getippt wird 
+app.get('/pokemons/:name', (req, res) => {
+  const name = req.params.name;
+  // Hier finden Sie das entsprechende Pokémon anhand seines Namens
+  const pokemon = pokemons.find(pokemon => pokemon.Name === name);
+  // Dann geben Sie die Daten an Ihre Pug-Datei weiter
+  res.render('pokemonDetail', { pokemon });
+});
+
+
 app.listen(port, () => {
   console.log(`App listening at http://localhost:${port}`)
 });
+
+
