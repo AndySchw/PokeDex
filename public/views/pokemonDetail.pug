@@ -1,7 +1,8 @@
 extends ../templates/layout.pug
 
-block logo 
-    img.logodetail(src="../includes/bilder/logo.png", alt="Pokemon Logo")
+block logo
+    a(href="/") 
+        img.logodetail(src="../includes/bilder/logo.png", alt="Pokemon Logo")
 
 
 block body
@@ -36,3 +37,7 @@ block body
                             p Normal
                     else
                         p= typ
+        a(href='/pokemons/' + previousPokemonName)
+            img.buttonlinks(src= "/includes/bilder/buttonLinks.png", alt="Linker Zurückbutton")
+        a(href='/pokemons/' + nextPokemonName)
+            img.buttonrechts(src= "/includes/bilder/buttonRechts.png", alt="Linker Zurückbutton")

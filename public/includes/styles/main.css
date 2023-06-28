@@ -164,3 +164,37 @@ p{
 .logodetail{
     width: 300px;
 }
+
+.buttonlinks{
+    position: absolute;
+    top: 120px;
+    left: 8px;
+    width: 500px;
+    opacity: 0.7;
+}
+
+.buttonrechts{
+    position: absolute;
+    top: 120px;
+    right: 8px;
+    width: 500px;
+    opacity: 0.7;
+}
+
+@media screen and (max-width: 1300px) {
+    .buttonlinks{
+        position: absolute;
+        top: 120px;
+        left: 8px;
+        width: 300px;
+        opacity: 0.7;
+    }
+    
+    .buttonrechts{
+        position: absolute;
+        top: 120px;
+        right: 8px;
+        width: 300px;
+        opacity: 0.7;
+    }
+  }

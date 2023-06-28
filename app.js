@@ -30,14 +30,29 @@ app.get('/', async (req, res, next) => {
   }
 });
 
-// Pfad für die jeweilige Karten URL die auf der Rootseite getippt wird 
+// Pfad für die jeweilige Karten URL die auf der Rootseite getippt wird
 app.get('/pokemons/:name', (req, res) => {
   const name = req.params.name;
+ 
   // Hier finden Sie das entsprechende Pokémon anhand seines Namens
   const pokemon = pokemons.find(pokemon => pokemon.Name === name);
+  // hier wird der derzeitige Index als varibale gespeichert
+  const currentIndex = pokemons.findIndex(p => p.Name === name);
+ 
+  const nextIndex = (currentIndex + 1) % pokemons.length;
+  const nextPokemon = pokemons[nextIndex];
+  const nextPokemonName = nextPokemon.Name;
+
+
+  const previousIndex = (currentIndex - 1 + pokemons.length) % pokemons.length;
+  const prevPokemon = pokemons[previousIndex];
+  const previousPokemonName = prevPokemon.Name;
+ 
   // Dann geben Sie die Daten an Ihre Pug-Datei weiter
-  res.render('pokemonDetail', { pokemon });
+  res.render('pokemonDetail', { pokemon, nextPokemonName, previousPokemonName });
 });
+
+
 
 
 app.listen(port, () => {
