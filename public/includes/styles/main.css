@@ -26,6 +26,31 @@ img{
     flex-wrap: wrap;
 }
 
+.karttext{
+    margin: 0px;
+} 
+
+.beschreibung{
+    position: absolute;
+    width: 300px;
+    /* background-color: #7038F8; */
+    top: 420px;
+    right: 170px;
+}
+
+.typenBeschreibung{
+    position: absolute;
+    /* background-color: #A040A0; */
+    top: 370px;
+    left: 170px;
+    width: 80px;
+}
+
+.pbeschreibung{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-size: 15px;
+}
+
 
 .karte{
     display: flex;
@@ -43,7 +68,7 @@ body{
     background-color: lightskyblue;
 }
 
-.planze{
+.normal {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -51,13 +76,12 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgb(60, 151, 60);
+    background-color: #A8A878;
     border-radius: 10px;
     color: white;
-    
-}
-
-.gift{
+  }
+ 
+  .feuer {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -65,12 +89,12 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgb(98, 6, 116);
+    background-color: #F08030;
     border-radius: 10px;
     color: white;
-}
-
-.feuer{
+  }
+ 
+  .wasser {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -78,12 +102,12 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgb(243, 51, 51);
+    background-color: #6890F0;
     border-radius: 10px;
     color: white;
-}
-
-.flug{
+  }
+ 
+  .pflanze {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -91,24 +115,12 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgba(146, 238, 248, 0.984);
-    border-radius: 10px;
-}
-
-.wasser{
-    margin: 3px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 75px;
-    height: 23px;
-    text-align: center;
-    background-color: rgb(17, 28, 233);
+    background-color: #78C850;
     border-radius: 10px;
     color: white;
-}
-
-.keafer{
+  }
+ 
+  .elektro {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -116,13 +128,12 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgb(0, 161, 27);
+    background-color: #F8D030;
     border-radius: 10px;
     color: white;
-}
-
-
-.normal{
+  }
+ 
+  .eis {
     margin: 3px;
     display: flex;
     align-items: center;
@@ -130,9 +141,167 @@ body{
     width: 75px;
     height: 23px;
     text-align: center;
-    background-color: rgb(145, 147, 151);
+    background-color: #98D8D8;
     border-radius: 10px;
-}
+    color: white;
+  }
+ 
+  .kampf {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #C03028;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .gift {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #A040A0;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .boden {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #E0C068;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .flug {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #A890F0;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .psycho {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #F85888;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .kaefer {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #A8B820;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .gestein {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #B8A038;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .geist {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #705898;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .drache {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #7038F8;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .stahl {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #B8B8D0;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .unlicht {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #705848;
+    border-radius: 10px;
+    color: white;
+  }
+ 
+  .fee {
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 75px;
+    height: 23px;
+    text-align: center;
+    background-color: #EE99AC;
+    border-radius: 10px;
+    color: white;
+  }
+
 
 p{
     font-family:Arial, Helvetica, sans-serif;
@@ -143,12 +312,19 @@ p{
 }
 
 .detail{
+    /* display: flex; */
     background-color: rgba(62, 216, 244, 0.63);
     padding: 15px;
     border-radius: 50px;
     justify-content: center;
     text-align: center;
     align-items: center;
+    
+}
+
+.detail img {
+    margin: auto;
+    display: block;
 }
 
 .detail p{
@@ -181,6 +357,32 @@ p{
     opacity: 0.7;
 }
 
+
+.buttontextLinks{
+    position: absolute;
+    top: 160px;
+    left: 200px;
+    font-size: 25px;
+}
+
+.buttontextRechts{
+    position: absolute;
+    top: 160px;
+    right: 200px;
+    font-size: 25px;
+}
+
+.buttonkeinlinks{
+       
+    visibility: hidden;
+}
+
+.buttonkleinrechts{
+    
+    visibility: hidden;
+}
+
+
 @media screen and (max-width: 1300px) {
     .buttonlinks{
         position: absolute;
@@ -197,17 +399,77 @@ p{
         width: 300px;
         opacity: 0.7;
     }
+
+    .buttontextLinks{
+        position: absolute;
+        top: 130px;
+        left: 150px;
+        font-size: 18px;
+    }
+    
+    .buttontextRechts{
+        position: absolute;
+        top: 130px;
+        right: 150px;
+        font-size: 18px;
+    }
+
+    .buttonkeinlinks{
+       
+        visibility: hidden;
+    }
+
+    .buttonkleinrechts{
+        
+        visibility: hidden;
+    }
   }
 
 
-.buttontextLinks {
-    position: absolute;
-    top: 150px;
-    left: 200px;
-}
+  @media screen and (max-width: 768px) { 
+    .buttonlinks {
+        opacity: 0;
+        display: none;
+    }
+    
+    .buttonrechts {
+        opacity: 0;
+        display: none;
+    }
 
-.buttontextRechts{
-    position: absolute;
-    top: 150px;
-    right: 200px;
+    .buttonkeinlinks{
+        visibility: visible;
+        position: absolute;
+        top: 120px;
+        left: 8px;
+        font-size: 18px;
+        width: 110px;
+        opacity: 0.7;
+    }
+
+    .buttonkleinrechts{
+        visibility: visible;
+        position: absolute;
+        top: 120px;
+        right: 8px;
+        font-size: 18px;
+        width: 110px;
+        opacity: 0.7;
+    }
+
+    .buttontextLinks{
+        position: absolute;
+        top: 220px;
+        left: 35px;
+        font-size: 15px;
+        
+    }
+    
+    .buttontextRechts{
+        position: absolute;
+        top: 220px;
+        right: 35px;
+        font-size: 15px;
+        
+    }
 }

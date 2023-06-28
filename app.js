@@ -14,21 +14,19 @@ app.set('views', path.join(__dirname, 'public/views'));
 // Set view engine as Pug
 app.set('view engine', 'pug');
 
-app.get('/', (req, res) => {
-  res.render('index');
-});
-
-
+//json in pug laden und root auf index verweisen
 app.get('/', async (req, res, next) => {
   try {
-    const data = await fs.promises.readFile('pokemon.json', 'utf8');
-    // console.log(data)
+    const data = await fs.promises.readFile(path.resolve(__dirname, 'pokemon.json'), 'utf8');
     const pokedata = JSON.parse(data);
-    // res.render('bodyDaten', { pokemon: pokedata });
+    res.render('index', { pokemons: pokedata });
   } catch (err) {
     next(err);
   }
 });
+
+
+
 
 // Pfad für die jeweilige Karten URL die auf der Rootseite getippt wird
 app.get('/pokemons/:name', (req, res) => {
