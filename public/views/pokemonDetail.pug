@@ -37,7 +37,13 @@ block body
                             p Normal
                     else
                         p= typ
+        
         a(href='/pokemons/' + previousPokemonName)
-            img.buttonlinks(src= "/includes/bilder/buttonLinks.png", alt="Linker Zurückbutton")
+                img.buttonlinks(src= "/includes/bilder/buttonLinks.png", alt="Linker Zurückbutton")
+                
         a(href='/pokemons/' + nextPokemonName)
-            img.buttonrechts(src= "/includes/bilder/buttonRechts.png", alt="Linker Zurückbutton")
+                img.buttonrechts(src= "/includes/bilder/buttonRechts.png", alt="Linker Zurückbutton")
+        
+        p.buttontextLinks= previousPokemonName
+
+        p.buttontextRechts= nextPokemonName        
