@@ -2,13 +2,13 @@ extends ../templates/layout.pug
 
 block logo
     a(href="/") 
-        img.logodetail(src="../includes/bilder/logo.png", alt="Pokemon Logo")
+        img.logodetail(src="../../bilder/logo.png", alt="Pokemon Logo")
 
 
 block body
     div.detail
         h1= pokemon.Name
-        h2= "PokeDexNr.: " +pokemon.Nummer
+        h2= "PokeDexNr.: " + pokemon.Nummer
         img.detailimg(src= "/includes/bilder/" + pokemon.Name + ".png", alt=pokemon.Name)
         div.beschreibung    
             p= pokemon.Beschreibung

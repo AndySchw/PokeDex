@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+
+  mongodb:
+    image: mongo
+    container_name: my_mongodb
+    ports:
+      - 27017:27017
+    env_file:
+      - .env
+    depends_on:
+      - mongo-import
+
+  mongo-import:
+    image: mongo
+    container_name: mongo_import
+    volumes:
+      - ./db:/data
+    command: mongoimport --host mongodb --db $MONGO_DATABASE --collection $MONGO_COLLECTION --file ./db/pokemon.json --jsonArray
+
+
+  frontend:
+    build: ./frontend
+    volumes:
+      - ./frontend:/usr/src/app
+      - ./db/bilder:/usr/src/app/bilder
+    ports:
+      - 3000:3000
+    depends_on:
+      - backend
+
+  backend:
+    build: ./backend
+    volumes:
+      - ./backend:/usr/src/app
+      - ./db/bilder:/usr/src/app/bilder
+    ports:
+      - 3001:3001
+    depends_on:
+      - mongodb
+
+volumes:
+  bilder:
