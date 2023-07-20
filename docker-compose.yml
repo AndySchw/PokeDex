@@ -13,13 +13,14 @@ services:
     image: mongo
     container_name: mongo_import
     volumes:
-      - /db/db:/usr/src/app/data
-    command: mongoimport --jsonArray --host mongodb --db $MONGO_DATABASE --collection $MONGO_COLLECTION --file /db/db/pokemon.json 
+      - ./db:/usr/src/app/data
+    command: mongoimport --jsonArray --host mongodb --db $MONGO_DATABASE --collection $MONGO_COLLECTION --file /usr/src/app/data/pokemon.json 
     depends_on:
       - mongodb
 
   backend:
     build: ./backend
+    container_name: backend
     volumes:
       - ./backend:/usr/src/app
       - ./db/bilder:/usr/src/app/bilder
