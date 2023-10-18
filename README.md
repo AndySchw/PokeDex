@@ -51,7 +51,7 @@ Die PokeDex-Anwendung besteht aus einem Backend und einem Frontend, die mit eine
 
 ## Kontakt
 
-Diese Anwendung wurde von [AndySchw] entwickelt. Bei Fragen oder Problemen können Sie mich unter [Ihre E-Mail-Adresse] kontaktieren.
+Diese Anwendung wurde von [AndySchw] entwickelt.
 
 Vielen Dank, dass Sie die PokeDex-Anwendung verwenden!
 
