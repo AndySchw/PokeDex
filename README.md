@@ -1,6 +1,6 @@
 Selbstverständlich, hier ist eine zusammengefasste README.md-Datei für Ihre PokeDex-Anwendung:
 
-```markdown
+
 # PokeDex-Anwendung
 
 Willkommen bei der PokeDex-Anwendung! Dies ist ein einfaches Webanwendungsprojekt, das Informationen über verschiedene Pokémon bereitstellt.
