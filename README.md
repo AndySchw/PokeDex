@@ -1,5 +1,3 @@
-Selbstverständlich, hier ist eine zusammengefasste README.md-Datei für Ihre PokeDex-Anwendung:
-
 
 # PokeDex-Anwendung
 
@@ -56,5 +54,4 @@ Die PokeDex-Anwendung besteht aus einem Backend und einem Frontend, die mit eine
 Diese Anwendung wurde von [AndySchw] entwickelt. Bei Fragen oder Problemen können Sie mich unter [Ihre E-Mail-Adresse] kontaktieren.
 
 Vielen Dank, dass Sie die PokeDex-Anwendung verwenden!
-```
 
