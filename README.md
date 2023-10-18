@@ -24,7 +24,7 @@ Die PokeDex-Anwendung besteht aus einem Backend und einem Frontend, die mit eine
 2. **Verzeichnis wechseln:** Wechseln Sie in das Verzeichnis des Projekts:
 
    ```bash
-   cd your-pokedex-repo
+   cd PokeDex
    ```
 
 3. **Docker-Container starten:** Erstellen und starten Sie die Docker-Container:
